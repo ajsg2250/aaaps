@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+   width: 150px;
+}
+
+.navigation a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color:#D3D3D3 ;
+    margin: 0 15px;
+    border-radius: 12px;
+    transition: ease-in-out 0.2s;
+    font-weight: 250;
+}
+
+.navigation a:hover {
+    color:black ;
+    background-color:  #818589;
+    /* add whatever hover for the things in the nav bar */
+}
+hr{
+    border: none;
+    width: 95%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 10px;
+    background-color:#D3D3D3;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.contact-inputs:focus{
+    border: 2px solid black;
+}
+.contact-inputs::placeholder{
+    color: black;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    background:#355E3B;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+.contact-left button:hover{
+    background: #023020;
+    opacity: 3;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 250px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
